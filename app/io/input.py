@@ -36,7 +36,7 @@ def input_from_pandas(file_path):
     """
     try:
         # Read the text file using pandas
-        data_frame = pd.read_csv(file_path, sep="\n", header=None)
+        data_frame = pd.read_csv(file_path, header=None)
         # Convert DataFrame to string
         text = data_frame.to_string(header=False, index=False)
         return text
